@@ -8,10 +8,8 @@ namespace EmpresaLivros
     {
         static void Main(string[] args)
         {
-           Pessoa p = new Pessoa(1, "b", "c", "d");
-            Autor a1 = new Autor(1, "b", "c", "d", "123-456");
-            Console.WriteLine(a1.ContaRecebimento);
-
+            Pedido p = new Pedido(1, 2);
+            Console.WriteLine($"{p.Codpedido}, {p.Valorpedido}");
         }
     }
 }
