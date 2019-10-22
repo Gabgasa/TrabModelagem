@@ -1,0 +1,11 @@
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\bin\Debug\netcoreapp2.2\EmpresaLivros.deps.json
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\bin\Debug\netcoreapp2.2\EmpresaLivros.runtimeconfig.json
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\bin\Debug\netcoreapp2.2\EmpresaLivros.runtimeconfig.dev.json
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\bin\Debug\netcoreapp2.2\EmpresaLivros.dll
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\bin\Debug\netcoreapp2.2\EmpresaLivros.pdb
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\obj\Debug\netcoreapp2.2\EmpresaLivros.csprojAssemblyReference.cache
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\obj\Debug\netcoreapp2.2\EmpresaLivros.csproj.CoreCompileInputs.cache
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\obj\Debug\netcoreapp2.2\EmpresaLivros.AssemblyInfoInputs.cache
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\obj\Debug\netcoreapp2.2\EmpresaLivros.AssemblyInfo.cs
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\obj\Debug\netcoreapp2.2\EmpresaLivros.dll
+C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\obj\Debug\netcoreapp2.2\EmpresaLivros.pdb
