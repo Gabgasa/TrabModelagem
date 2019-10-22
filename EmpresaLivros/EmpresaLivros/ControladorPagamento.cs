@@ -9,5 +9,10 @@ namespace EmpresaLivros
         public ControladorPagamento()
         {
         }
+
+        public void Pagamento()
+        {
+            Console.WriteLine("Você selecionou Comprar um Livro");
+        }
     }
 }

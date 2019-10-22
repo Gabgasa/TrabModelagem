@@ -9,5 +9,10 @@ namespace EmpresaLivros
         public ControladorPublicarLivro()
         {
         }
+
+        public void Publicar()
+        {
+            Console.WriteLine("Você selecionou publicar livro");
+        }
     }
 }
