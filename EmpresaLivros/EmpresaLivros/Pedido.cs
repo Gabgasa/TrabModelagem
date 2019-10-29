@@ -8,6 +8,7 @@ namespace EmpresaLivros
     {
         private int codpedido;
         private float valorpedido;
+        private List<ItemPedido> itemsPedidos = new List<ItemPedido>();
 
         public Pedido(int codpedido, float valorpedido)
         {

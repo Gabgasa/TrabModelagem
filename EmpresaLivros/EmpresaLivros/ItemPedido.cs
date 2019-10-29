@@ -8,14 +8,18 @@ namespace EmpresaLivros
     {
         private int coditempedido;
         private float valoritempedido;
+        private Livro livroPedido;
 
-        public ItemPedido(int coditempedido, float valoritempedido)
+        public ItemPedido(int coditempedido, float valoritempedido, Livro livroPedido)
         {
-            Coditempedido = coditempedido;
-            Valoritempedido = valoritempedido;
+            this.Coditempedido = coditempedido;
+            this.Valoritempedido = valoritempedido;
+            this.LivroPedido = livroPedido;
+
         }
 
         public int Coditempedido { get => coditempedido; set => coditempedido = value; }
         public float Valoritempedido { get => valoritempedido; set => valoritempedido = value; }
+        internal Livro LivroPedido { get => livroPedido; set => livroPedido = value; }
     }
 }

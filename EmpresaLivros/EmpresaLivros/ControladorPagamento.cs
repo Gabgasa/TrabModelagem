@@ -10,7 +10,7 @@ namespace EmpresaLivros
         {
         }
 
-        public void Pagamento()
+        public void Pagamento(Cliente cliente)
         {
             Console.WriteLine("Você selecionou Comprar um Livro");
         }
