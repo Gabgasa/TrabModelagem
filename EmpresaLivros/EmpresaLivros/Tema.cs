@@ -8,7 +8,7 @@ namespace EmpresaLivros
     {
         private string nomeTema;
         private static List<Tema> listaTemas = new List<Tema>();
-        private static List<Tema> subTemas = new List<Tema>();
+        private List<Tema> subTemas = new List<Tema>();
 
         public Tema(string nomeTema)
         {
