@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,12 +11,15 @@ namespace EmpresaLivros
         private static List<Tema> listaTemas = new List<Tema>();
         private List<Tema> subTemas = new List<Tema>();
 
+        
+
         public Tema(string nomeTema)
         {
-            this.nomeTema = nomeTema;
+            this.NomeTema = nomeTema;
             listaTemas.Add(this);
         }
 
+        public string NomeTema { get => nomeTema; set => nomeTema = value; }
 
         //Stub
         public static bool validaTema(string nomeTema)
@@ -29,7 +33,7 @@ namespace EmpresaLivros
 
             foreach (Tema tema in listaTemas)
             {
-                if (nomeTema.Equals(tema.nomeTema, StringComparison.OrdinalIgnoreCase))
+                if (nomeTema.Equals(tema.NomeTema, StringComparison.OrdinalIgnoreCase))
                     break;
                 Interface.erroTema();
                 return false;

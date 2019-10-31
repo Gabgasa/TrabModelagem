@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace EmpresaLivros
 {
@@ -59,6 +61,15 @@ namespace EmpresaLivros
             Tema temaLivro = new Tema(tema);
             Livro novoLivro = new Livro(float.Parse(valor), conteudo, titulo, temaLivro);
             autor.adicionarLivroPublicado(novoLivro);
+            
+
+
+            using (StreamWriter file = File.CreateText(@"C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\Json\Livros.json"))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                serializer.Serialize(file, Livro.Livros);
+            }
+            
             Interface.sucessoCadastro(titulo);
         }
     }

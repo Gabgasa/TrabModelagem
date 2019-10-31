@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,16 +8,16 @@ namespace EmpresaLivros
     class Livro
     {
 
-        
+
 
         private float valor;
         private string titulo;
         private string conteudo;
         private DateTime datapublicacao;
-        private Tema tema;
-        static List<Livro> Livros = new List<Livro>();
+        [JsonProperty] private Tema tema;
+        public static List<Livro> Livros = new List<Livro>();
 
-        public Livro(float valor,string conteudo, string titulo, Tema tema)
+        public Livro(float valor, string conteudo, string titulo, Tema tema)
         {
             this.Valor = valor;
             this.Titulo = titulo;
@@ -84,5 +85,6 @@ namespace EmpresaLivros
             else
                 return true;
         }
+
     }
 }

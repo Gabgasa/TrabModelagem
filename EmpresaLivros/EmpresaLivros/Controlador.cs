@@ -1,5 +1,8 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using Newtonsoft.Json;
 
 
 namespace EmpresaLivros
@@ -19,6 +22,19 @@ namespace EmpresaLivros
             ControladorSugestao Sugestao = new ControladorSugestao();
             ControladorPagamento Pagamento = new ControladorPagamento();
             ControladorInterface Interface = new ControladorInterface();
+
+
+
+            using (StreamReader file = new StreamReader(@"C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\Json\Livros.json"))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                List<Livro> livro = (List<Livro>)serializer.Deserialize(file, typeof(List<Livro>));
+                Console.WriteLine(livro[1].Titulo);
+            }
+
+
+
+
 
             Autor autor = new Autor(1, "Gabriel", "Evinie", "123456");
             Cliente cliente = new Cliente(2, "Gabriel", "Evinie2", "456123");
