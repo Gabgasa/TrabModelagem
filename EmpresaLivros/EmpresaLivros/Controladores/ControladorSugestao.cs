@@ -9,5 +9,10 @@ namespace EmpresaLivros
         public ControladorSugestao()
         {
         }
+
+        public void gerarSugestao(Cliente cliente)
+        {
+            Console.WriteLine("Você selecionou gerar sugestão.");
+        }
     }
 }

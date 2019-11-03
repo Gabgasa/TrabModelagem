@@ -1,1 +1,88 @@
-[{"tema":{"NomeTema":"ciencia"},"Valor":1.0,"Titulo":"1","Conteudo":"1"},{"tema":{"NomeTema":"ciencia"},"Valor":2.0,"Titulo":"2","Conteudo":"2"}]
+[
+  {
+    "tema": {
+      "subTemas": [],
+      "NomeTema": "Historia Brasileira",
+      "TemaPai": "Historia"
+    },
+    "Valor": 111.0,
+    "Titulo": "111",
+    "Conteudo": "111"
+  },
+  {
+    "tema": {
+      "subTemas": [
+        "Historia Brasileira"
+      ],
+      "NomeTema": "Historia",
+      "TemaPai": null
+    },
+    "Valor": 222.0,
+    "Titulo": "222",
+    "Conteudo": "222"
+  },
+  {
+    "tema": {
+      "subTemas": [
+        "Machine Learning"
+      ],
+      "NomeTema": "Computacao",
+      "TemaPai": "Ciencia"
+    },
+    "Valor": 333.0,
+    "Titulo": "333",
+    "Conteudo": "333"
+  },
+  {
+    "tema": {
+      "subTemas": [],
+      "NomeTema": "Lingua portuguesa",
+      "TemaPai": "Linguas"
+    },
+    "Valor": 444.0,
+    "Titulo": "444",
+    "Conteudo": "444"
+  },
+  {
+    "tema": {
+      "subTemas": [],
+      "NomeTema": "Machine Learning",
+      "TemaPai": "Computacao"
+    },
+    "Valor": 555.0,
+    "Titulo": "555",
+    "Conteudo": "555"
+  },
+  {
+    "tema": {
+      "subTemas": [],
+      "NomeTema": "Quimica",
+      "TemaPai": "Ciencia"
+    },
+    "Valor": 666.0,
+    "Titulo": "666",
+    "Conteudo": "666"
+  },
+  {
+    "tema": {
+      "subTemas": [],
+      "NomeTema": "Ciencias biologicas",
+      "TemaPai": "Ciencia"
+    },
+    "Valor": 777.0,
+    "Titulo": "777",
+    "Conteudo": "777"
+  },
+  {
+    "tema": {
+      "subTemas": [
+        "Lingua portuguesa"
+      ],
+      "NomeTema": "Linguas",
+      "TemaPai": null
+    },
+    "Valor": 888.0,
+    "Titulo": "888",
+    "Conteudo": "888"
+  }
+]

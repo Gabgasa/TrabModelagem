@@ -1,0 +1,57 @@
+[
+  {
+    "subTemas": [
+      "Quimica",
+      "Computacao",
+      "Ciencias biologicas"
+    ],
+    "NomeTema": "Ciencia",
+    "TemaPai": null
+  },
+  {
+    "subTemas": [
+      "Lingua portuguesa"
+    ],
+    "NomeTema": "Linguas",
+    "TemaPai": null
+  },
+  {
+    "subTemas": [
+      "Historia Brasileira"
+    ],
+    "NomeTema": "Historia",
+    "TemaPai": null
+  },
+  {
+    "subTemas": [],
+    "NomeTema": "Quimica",
+    "TemaPai": "Ciencia"
+  },
+  {
+    "subTemas": [
+      "Machine Learning"
+    ],
+    "NomeTema": "Computacao",
+    "TemaPai": "Ciencia"
+  },
+  {
+    "subTemas": [],
+    "NomeTema": "Historia Brasileira",
+    "TemaPai": "Historia"
+  },
+  {
+    "subTemas": [],
+    "NomeTema": "Lingua portuguesa",
+    "TemaPai": "Linguas"
+  },
+  {
+    "subTemas": [],
+    "NomeTema": "Machine Learning",
+    "TemaPai": "Computacao"
+  },
+  {
+    "subTemas": [],
+    "NomeTema": "Ciencias biologicas",
+    "TemaPai": "Ciencia"
+  }
+]

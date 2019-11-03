@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using EmpresaLivros.Views;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -37,7 +38,7 @@ namespace EmpresaLivros
         //Verifica se o nome do livro já foi cadastrado ou se veio nome em branco.
         public static bool validaLivro(string titulo)
         {
-            ControladorInterface Interface = new ControladorInterface();
+            PublicarLivroView Interface = new PublicarLivroView();
 
             if (String.IsNullOrEmpty(titulo))
             {
@@ -59,7 +60,7 @@ namespace EmpresaLivros
 
         public static bool validaValor(string valor)
         {
-            ControladorInterface Interface = new ControladorInterface();
+            PublicarLivroView Interface = new PublicarLivroView();
             if (String.IsNullOrEmpty(valor))
             {
                 Interface.erroValor();
@@ -84,6 +85,27 @@ namespace EmpresaLivros
                 return false;
             else
                 return true;
+        }
+
+        public static List<Livro> procuraLivrosTema(List<Livro> livros, string tema)
+        {
+            ListarLivrosTemaView Interface = new ListarLivrosTemaView();
+
+            if (String.IsNullOrEmpty(tema))
+            {
+                Interface.listaTodosLivros();
+                return Livros;
+            }
+
+            foreach (Livro lv in Livros)
+            {
+                if (tema.Equals(lv.Tema.NomeTema, StringComparison.OrdinalIgnoreCase))
+                {
+                    livros.Add(lv);
+                }
+            }
+            Interface.listarLivrosSucesso(tema);
+            return livros;
         }
 
     }

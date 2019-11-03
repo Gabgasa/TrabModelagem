@@ -10,6 +10,7 @@ namespace EmpresaLivros
         private string nome;
         private string usuario;
         private string senha;
+        public static List<Pessoa> listaPessoas = new List<Pessoa>();
 
         public Pessoa(int id, string nome, string usuario, string senha)
         {
@@ -17,6 +18,7 @@ namespace EmpresaLivros
             this.Nome = nome;
             this.Usuario = usuario;
             this.Senha = senha;
+            listaPessoas.Add(this);
         }
 
         public int Id { get => id; set => id = value; }

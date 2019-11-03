@@ -8,7 +8,7 @@ namespace EmpresaLivros
 {
     class ControladorPublicarLivro
     {
-        ControladorInterface Interface = new ControladorInterface();
+        PublicarLivroView Interface = new PublicarLivroView();
         Controlador controlador = new Controlador();
 
 
@@ -58,17 +58,11 @@ namespace EmpresaLivros
         {
             Interface.uploadLivro();
             String conteudo = Console.ReadLine();
-            Tema temaLivro = new Tema(tema);
+            Tema temaLivro = Tema.procuraTema(tema);
             Livro novoLivro = new Livro(float.Parse(valor), conteudo, titulo, temaLivro);
             autor.adicionarLivroPublicado(novoLivro);
-            
 
-
-            using (StreamWriter file = File.CreateText(@"C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\Json\Livros.json"))
-            {
-                JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, Livro.Livros);
-            }
+            LivroDao.saveBooks();               
             
             Interface.sucessoCadastro(titulo);
         }

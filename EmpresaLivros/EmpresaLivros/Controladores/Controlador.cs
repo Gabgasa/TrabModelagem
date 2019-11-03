@@ -1,18 +1,23 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
-using Newtonsoft.Json;
-
 
 namespace EmpresaLivros
 {
     class Controlador
     {
         static void Main(string[] args)
-        {
-            Controlador.Inicio();            
-            
+        {                     
+            LivroDao.loadBooks();
+            TemaDao.loadTemas();
+
+
+            Inicio();
+
+
+
         }
 
         public static void Inicio()
@@ -21,24 +26,20 @@ namespace EmpresaLivros
             ControladorListarLivrosTema ListarLivrosTema = new ControladorListarLivrosTema();
             ControladorSugestao Sugestao = new ControladorSugestao();
             ControladorPagamento Pagamento = new ControladorPagamento();
-            ControladorInterface Interface = new ControladorInterface();
 
+            MenuInicialView Interface = new MenuInicialView();
 
+           
 
-            using (StreamReader file = new StreamReader(@"C:\Users\gab_g\OneDrive\Documentos\GitHub\TrabModelagem\EmpresaLivros\EmpresaLivros\Json\Livros.json"))
-            {
-                JsonSerializer serializer = new JsonSerializer();
-                List<Livro> livro = (List<Livro>)serializer.Deserialize(file, typeof(List<Livro>));
-                Console.WriteLine(livro[1].Titulo);
-            }
-
-
-
+         //Carregandom todos os dados
+           // PessoaDao.loadPessoas();
+           // AutorDao.loadAutores();
+           // ClienteDao.loadClientes();
 
 
             Autor autor = new Autor(1, "Gabriel", "Evinie", "123456");
             Cliente cliente = new Cliente(2, "Gabriel", "Evinie2", "456123");
-            Tema tema = new Tema("Ciencia");
+
 
         Interface.menuInicial();
             switch (Console.ReadLine())
@@ -53,6 +54,9 @@ namespace EmpresaLivros
                     Pagamento.Pagamento(cliente);
                     break;
                 case "4":
+                    Sugestao.gerarSugestao(cliente);
+                    break;
+                case "5":
                     return;
             }
         }
