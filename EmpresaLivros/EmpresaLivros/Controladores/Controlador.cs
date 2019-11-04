@@ -38,7 +38,7 @@ namespace EmpresaLivros
 
 
             Autor autor = new Autor(1, "Gabriel", "Evinie", "123456");
-            Cliente cliente = new Cliente(2, "Gabriel", "Evinie2", "456123");
+            Cliente cliente = new Cliente(2, "Gabriel", "Evinie2", "456123", 10000);
 
 
         Interface.menuInicial();

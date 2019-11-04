@@ -10,9 +10,8 @@ namespace EmpresaLivros
         private float valoritempedido;
         private Livro livroPedido;
 
-        public ItemPedido(int coditempedido, float valoritempedido, Livro livroPedido)
+        public ItemPedido(float valoritempedido, Livro livroPedido)
         {
-            this.Coditempedido = coditempedido;
             this.Valoritempedido = valoritempedido;
             this.LivroPedido = livroPedido;
 

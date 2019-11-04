@@ -58,6 +58,27 @@ namespace EmpresaLivros
             return true;
         }
 
+        public static bool existeLivro(string titulo)
+        {
+            PublicarLivroView Interface = new PublicarLivroView();
+
+            if (String.IsNullOrEmpty(titulo))
+            {
+                Interface.erroLivro();
+                return false;
+            }
+
+            foreach (Livro livro in Livros)
+            {
+                if (titulo.Equals(livro.titulo, StringComparison.OrdinalIgnoreCase))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public static bool validaValor(string valor)
         {
             PublicarLivroView Interface = new PublicarLivroView();
@@ -104,8 +125,20 @@ namespace EmpresaLivros
                     livros.Add(lv);
                 }
             }
-            Interface.listarLivrosSucesso(tema);
             return livros;
+        }
+
+        public static Livro procuraLivro(string titulo)
+        {
+            foreach (Livro lv in Livros)
+            {
+                if (lv.Titulo.Equals(titulo, StringComparison.OrdinalIgnoreCase))
+                {
+                    return lv;
+                }
+            }
+
+            return null;
         }
 
     }

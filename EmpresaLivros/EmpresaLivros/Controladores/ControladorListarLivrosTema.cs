@@ -24,13 +24,23 @@ namespace EmpresaLivros
         {
             List<Livro> livros = new List<Livro>();
             livros = Livro.procuraLivrosTema(livros, tema);
-
+            if (livros.Count == 0)
+            {
+                Interface.listarLivrosErro(tema);
+                ListarLivros();
                 
+            }
+
+            if (!String.IsNullOrEmpty(tema))
+            {
+                Interface.listarLivrosSucesso(tema);
+            }
+            
             foreach (Livro lv in livros)
             {
+
                 Interface.mostraLivro(lv.Titulo);
             }
-            Controlador.Inicio();
             
         }
 
