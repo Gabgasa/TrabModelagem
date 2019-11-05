@@ -14,6 +14,7 @@ namespace EmpresaLivros
         {
             if (cliente.Balanco <= pedido.Valorpedido)
             {
+                Console.WriteLine(cliente.Balanco);
                 Views.PagamentoView.erroBalancoInsuficiente();
                 return;
             }
@@ -26,7 +27,7 @@ namespace EmpresaLivros
                     cliente.addLivro(ipedido.LivroPedido);
                 }
             }
-
+            ClienteDao.saveClientes();
         }
     }
 }

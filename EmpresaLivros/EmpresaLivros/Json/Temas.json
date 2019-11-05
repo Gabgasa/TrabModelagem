@@ -1,57 +1,33 @@
 [
   {
     "subTemas": [
-      "Quimica",
-      "Computacao",
-      "Ciencias biologicas"
+      "Ciencia da Computacao",
+      "Ciencias Contabeis",
+      "Ciencia Politica"
     ],
     "NomeTema": "Ciencia",
     "TemaPai": null
   },
   {
     "subTemas": [
-      "Lingua portuguesa"
+      "Inteligencia Artificial"
     ],
-    "NomeTema": "Linguas",
-    "TemaPai": null
-  },
-  {
-    "subTemas": [
-      "Historia Brasileira"
-    ],
-    "NomeTema": "Historia",
-    "TemaPai": null
-  },
-  {
-    "subTemas": [],
-    "NomeTema": "Quimica",
-    "TemaPai": "Ciencia"
-  },
-  {
-    "subTemas": [
-      "Machine Learning"
-    ],
-    "NomeTema": "Computacao",
+    "NomeTema": "Ciencia da Computacao",
     "TemaPai": "Ciencia"
   },
   {
     "subTemas": [],
-    "NomeTema": "Historia Brasileira",
-    "TemaPai": "Historia"
+    "NomeTema": "Inteligencia Artificial",
+    "TemaPai": "Ciencia da Computacao"
   },
   {
     "subTemas": [],
-    "NomeTema": "Lingua portuguesa",
-    "TemaPai": "Linguas"
+    "NomeTema": "Ciencias Contabeis",
+    "TemaPai": "Ciencia"
   },
   {
     "subTemas": [],
-    "NomeTema": "Machine Learning",
-    "TemaPai": "Computacao"
-  },
-  {
-    "subTemas": [],
-    "NomeTema": "Ciencias biologicas",
+    "NomeTema": "Ciencia Politica",
     "TemaPai": "Ciencia"
   }
 ]

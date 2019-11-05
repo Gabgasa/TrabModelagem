@@ -14,17 +14,19 @@ namespace EmpresaLivros
         private float valor;
         private string titulo;
         private string conteudo;
+        private string nomeAutor;
         private DateTime datapublicacao;
         [JsonProperty] private Tema tema;
         public static List<Livro> Livros = new List<Livro>();
 
-        public Livro(float valor, string conteudo, string titulo, Tema tema)
+        public Livro(float valor, string conteudo, string titulo, string nomeAutor, Tema tema)
         {
             this.Valor = valor;
             this.Titulo = titulo;
             this.datapublicacao = new DateTime();
             this.Tema = tema;
             this.conteudo = conteudo;
+            this.NomeAutor = nomeAutor;
 
             Livros.Add(this);
         }
@@ -33,6 +35,7 @@ namespace EmpresaLivros
         public string Titulo { get => titulo; set => titulo = value; }
         internal Tema Tema { get => tema; set => tema = value; }
         public string Conteudo { get => conteudo; set => conteudo = value; }
+        public string NomeAutor { get => nomeAutor; set => nomeAutor = value; }
 
 
         //Verifica se o nome do livro já foi cadastrado ou se veio nome em branco.
@@ -141,5 +144,5 @@ namespace EmpresaLivros
             return null;
         }
 
-    }
+    }  
 }

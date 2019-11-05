@@ -2,101 +2,115 @@
   {
     "tema": {
       "subTemas": [],
-      "NomeTema": "Historia Brasileira",
-      "TemaPai": "Historia"
+      "NomeTema": "Inteligencia Artificial",
+      "TemaPai": "Ciencia da Computacao"
     },
-    "Valor": 111.0,
-    "Titulo": "111",
-    "Conteudo": "111"
+    "Valor": 599.0,
+    "Titulo": "Algoritmos de machine learning",
+    "Conteudo": "Algoritmos",
+    "NomeAutor": "João"
   },
   {
     "tema": {
       "subTemas": [
-        "Historia Brasileira"
+        "Inteligencia Artificial"
       ],
-      "NomeTema": "Historia",
-      "TemaPai": null
-    },
-    "Valor": 222.0,
-    "Titulo": "222",
-    "Conteudo": "222"
-  },
-  {
-    "tema": {
-      "subTemas": [
-        "Machine Learning"
-      ],
-      "NomeTema": "Computacao",
+      "NomeTema": "Ciencia da Computacao",
       "TemaPai": "Ciencia"
     },
-    "Valor": 333.0,
-    "Titulo": "333",
-    "Conteudo": "333"
-  },
-  {
-    "tema": {
-      "subTemas": [],
-      "NomeTema": "Lingua portuguesa",
-      "TemaPai": "Linguas"
-    },
-    "Valor": 444.0,
-    "Titulo": "444",
-    "Conteudo": "444"
-  },
-  {
-    "tema": {
-      "subTemas": [],
-      "NomeTema": "Machine Learning",
-      "TemaPai": "Computacao"
-    },
-    "Valor": 555.0,
-    "Titulo": "555",
-    "Conteudo": "555"
-  },
-  {
-    "tema": {
-      "subTemas": [],
-      "NomeTema": "Quimica",
-      "TemaPai": "Ciencia"
-    },
-    "Valor": 666.0,
-    "Titulo": "666",
-    "Conteudo": "666"
-  },
-  {
-    "tema": {
-      "subTemas": [],
-      "NomeTema": "Ciencias biologicas",
-      "TemaPai": "Ciencia"
-    },
-    "Valor": 777.0,
-    "Titulo": "777",
-    "Conteudo": "777"
+    "Valor": 699.0,
+    "Titulo": "Analise de Algoritmos",
+    "Conteudo": "aaaaaaaaaaaa",
+    "NomeAutor": "João"
   },
   {
     "tema": {
       "subTemas": [
-        "Lingua portuguesa"
-      ],
-      "NomeTema": "Linguas",
-      "TemaPai": null
-    },
-    "Valor": 888.0,
-    "Titulo": "888",
-    "Conteudo": "888"
-  },
-  {
-    "tema": {
-      "subTemas": [
-        "Quimica",
-        "Computacao",
-        "Ciencias biologicas"
+        "Ciencia da Computacao",
+        "Ciencias Contabeis",
+        "Ciencia Politica"
       ],
       "NomeTema": "Ciencia",
       "TemaPai": null
     },
-    "Valor": 999.0,
-    "Titulo": "999",
-    "Conteudo": "999"
+    "Valor": 350.0,
+    "Titulo": "Metodo Cientifico",
+    "Conteudo": "BBBBBBBBBBBB",
+    "NomeAutor": "João"
+  },
+  {
+    "tema": {
+      "subTemas": [
+        "Ciencia da Computacao",
+        "Ciencias Contabeis",
+        "Ciencia Politica"
+      ],
+      "NomeTema": "Ciencia",
+      "TemaPai": null
+    },
+    "Valor": 100.0,
+    "Titulo": "Ciencia1",
+    "Conteudo": "ciencia1",
+    "NomeAutor": "João"
+  },
+  {
+    "tema": {
+      "subTemas": [
+        "Ciencia da Computacao",
+        "Ciencias Contabeis",
+        "Ciencia Politica"
+      ],
+      "NomeTema": "Ciencia",
+      "TemaPai": null
+    },
+    "Valor": 100.0,
+    "Titulo": "Ciencia2",
+    "Conteudo": "ciencia2",
+    "NomeAutor": "João"
+  },
+  {
+    "tema": {
+      "subTemas": [
+        "Ciencia da Computacao",
+        "Ciencias Contabeis",
+        "Ciencia Politica"
+      ],
+      "NomeTema": "Ciencia",
+      "TemaPai": null
+    },
+    "Valor": 100.0,
+    "Titulo": "Ciencia3",
+    "Conteudo": "ciencia3",
+    "NomeAutor": "João"
+  },
+  {
+    "tema": {
+      "subTemas": [
+        "Ciencia da Computacao",
+        "Ciencias Contabeis",
+        "Ciencia Politica"
+      ],
+      "NomeTema": "Ciencia",
+      "TemaPai": null
+    },
+    "Valor": 100.0,
+    "Titulo": "Ciencia4",
+    "Conteudo": "ciencia4",
+    "NomeAutor": "João"
+  },
+  {
+    "tema": {
+      "subTemas": [
+        "Ciencia da Computacao",
+        "Ciencias Contabeis",
+        "Ciencia Politica"
+      ],
+      "NomeTema": "Ciencia",
+      "TemaPai": null
+    },
+    "Valor": 300.0,
+    "Titulo": "ABC",
+    "Conteudo": "aAAAAAAAAAAAAAA",
+    "NomeAutor": "Mariela"
   }
 ]

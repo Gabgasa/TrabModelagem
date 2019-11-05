@@ -1,0 +1,55 @@
+[
+  {
+    "LivrosComprados": [],
+    "Balanco": 7900.0,
+    "Id": 4,
+    "Nome": "Rafael",
+    "Usuario": "Rafa123",
+    "Senha": "416123"
+  },
+  {
+    "LivrosComprados": [],
+    "Balanco": 650.0,
+    "Id": 5,
+    "Nome": "Renan",
+    "Usuario": "Awybin",
+    "Senha": "772123"
+  },
+  {
+    "LivrosComprados": [
+      {
+        "tema": {
+          "subTemas": [
+            "Ciencia da Computacao",
+            "Ciencias Contabeis",
+            "Ciencia Politica"
+          ],
+          "NomeTema": "Ciencia",
+          "TemaPai": null
+        },
+        "Valor": 350.0,
+        "Titulo": "Metodo Cientifico",
+        "Conteudo": "BBBBBBBBBBBB",
+        "NomeAutor": "João"
+      },
+      {
+        "tema": {
+          "subTemas": [
+            "Inteligencia Artificial"
+          ],
+          "NomeTema": "Ciencia da Computacao",
+          "TemaPai": "Ciencia"
+        },
+        "Valor": 699.0,
+        "Titulo": "Analise de Algoritmos",
+        "Conteudo": "aaaaaaaaaaaa",
+        "NomeAutor": "João"
+      }
+    ],
+    "Balanco": 3951.0,
+    "Id": 6,
+    "Nome": "Gabriel",
+    "Usuario": "Evinie",
+    "Senha": "441233"
+  }
+]

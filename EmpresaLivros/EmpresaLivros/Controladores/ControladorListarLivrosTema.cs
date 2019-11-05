@@ -41,7 +41,6 @@ namespace EmpresaLivros
 
                 Interface.mostraLivro(lv.Titulo);
             }
-            
         }
 
     }

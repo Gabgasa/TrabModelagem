@@ -12,7 +12,17 @@ namespace EmpresaLivros
 
         public void gerarSugestao(Cliente cliente)
         {
-            Console.WriteLine("Você selecionou gerar sugestão.");
+            Sugestao sugestao = new Sugestao();
+            List<Livro> resposta = sugestao.geraSugestao(cliente);
+            if (resposta != null)
+            {
+                Views.GerarSugestaoView.gerarSugestao(resposta);
+            }
+            else
+            {
+                Views.GerarSugestaoView.erroSugestao();
+            }
+            Controlador.Inicio();
         }
     }
 }

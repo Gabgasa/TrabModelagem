@@ -10,51 +10,38 @@ namespace EmpresaLivros
     {
         static void Main(string[] args)
         {                     
-            LivroDao.loadBooks();
-            TemaDao.loadTemas();
-
+            //LivroDao.loadBooks();
+            //TemaDao.loadTemas();
+            ClienteDao.loadClientes();
+            AutorDao.loadAutores();
+            
 
             Inicio();
-
-
-
         }
 
         public static void Inicio()
         {
             ControladorPublicarLivro PublicarLivro = new ControladorPublicarLivro();
             ControladorListarLivrosTema ListarLivrosTema = new ControladorListarLivrosTema();
-            ControladorSugestao Sugestao = new ControladorSugestao();
-            ControladorPagamento Pagamento = new ControladorPagamento();
+            ControladorSugestao ControleSugestao = new ControladorSugestao();
+            ControladorPagamento ControlePagamento = new ControladorPagamento();
 
             MenuInicialView Interface = new MenuInicialView();
 
-           
-
-         //Carregandom todos os dados
-           // PessoaDao.loadPessoas();
-           // AutorDao.loadAutores();
-           // ClienteDao.loadClientes();
-
-
-            Autor autor = new Autor(1, "Gabriel", "Evinie", "123456");
-            Cliente cliente = new Cliente(2, "Gabriel", "Evinie2", "456123", 10000);
-
-
-        Interface.menuInicial();
+            Interface.menuInicial();
             switch (Console.ReadLine())
             {
                 case "1":
-                    PublicarLivro.Publicar(autor);
+                    PublicarLivro.Publicar(Autor.listaAutores[2]);
                     break;
                 case "2":
                     ListarLivrosTema.ListarLivros();
                     break;
                 case "3":
-                    Pagamento.Pagamento(cliente);
+                    ControlePagamento.realizarPagamento(Cliente.listaClientes[2]);
                     break;
                 case "4":
-                    Sugestao.gerarSugestao(cliente);
+                    ControleSugestao.gerarSugestao(Cliente.listaClientes[0]);
                     break;
                 case "5":
                     return;

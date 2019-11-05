@@ -59,10 +59,11 @@ namespace EmpresaLivros
             Interface.uploadLivro();
             String conteudo = Console.ReadLine();
             Tema temaLivro = Tema.procuraTema(tema);
-            Livro novoLivro = new Livro(float.Parse(valor), conteudo, titulo, temaLivro);
+            Livro novoLivro = new Livro(float.Parse(valor), conteudo, titulo, autor.Nome, temaLivro);
             autor.adicionarLivroPublicado(novoLivro);
 
-            LivroDao.saveBooks();               
+            LivroDao.saveBooks();
+            AutorDao.saveAutores();
             
             Interface.sucessoCadastro(titulo);
         }

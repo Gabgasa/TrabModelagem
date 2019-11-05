@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,12 +13,15 @@ namespace EmpresaLivros
         private List<Livro> livrosComprados = new List<Livro>();
         public static List<Cliente> listaClientes = new List<Cliente>();
 
+        public List<Livro> LivrosComprados { get => livrosComprados; set => livrosComprados = value; }
         public float Balanco { get => balanco; set => balanco = value; }
-        internal List<Livro> LivrosComprados { get => livrosComprados; set => livrosComprados = value; }
 
-        public Cliente(int id, string nome, string usuario, string senha, float balanco) : base(id, nome, usuario, senha)
+        [JsonConstructor]
+        public Cliente(int id, string nome, string usuario, string senha, float balanco, List<Livro> livroscomprados) : base(id, nome, usuario, senha)
         {
             listaClientes.Add(this);
+            this.Balanco = balanco;
+            this.LivrosComprados = livroscomprados;
         }
 
         public void addLivro(Livro livro)

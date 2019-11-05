@@ -12,6 +12,7 @@ namespace EmpresaLivros
         [JsonProperty] private List<Livro> livrosPublicados = new List<Livro>();
         public static List<Autor> listaAutores = new List<Autor>();
 
+        [JsonConstructor]
         public Autor(int id, string nome, string usuario, string senha, string contaRecebimento) : base(id, nome, usuario, senha)
         {
             this.ContaRecebimento = contaRecebimento;
@@ -20,6 +21,7 @@ namespace EmpresaLivros
 
         public Autor(int id, string nome, string usuario, string senha) : base(id, nome, usuario, senha)
         {
+            listaAutores.Add(this);
         }
 
         public string ContaRecebimento { get => contaRecebimento; set => contaRecebimento = value; }

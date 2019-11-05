@@ -1,0 +1,142 @@
+[
+  {
+    "livrosPublicados": [
+      {
+        "tema": {
+          "subTemas": [],
+          "NomeTema": "Inteligencia Artificial",
+          "TemaPai": "Ciencia da Computacao"
+        },
+        "Valor": 599.0,
+        "Titulo": "Algoritmos de machine learning",
+        "Conteudo": "Algoritmos",
+        "NomeAutor": "João"
+      },
+      {
+        "tema": {
+          "subTemas": [
+            "Inteligencia Artificial"
+          ],
+          "NomeTema": "Ciencia da Computacao",
+          "TemaPai": "Ciencia"
+        },
+        "Valor": 699.0,
+        "Titulo": "Analise de Algoritmos",
+        "Conteudo": "aaaaaaaaaaaa",
+        "NomeAutor": "João"
+      },
+      {
+        "tema": {
+          "subTemas": [
+            "Ciencia da Computacao",
+            "Ciencias Contabeis",
+            "Ciencia Politica"
+          ],
+          "NomeTema": "Ciencia",
+          "TemaPai": null
+        },
+        "Valor": 350.0,
+        "Titulo": "Metodo Cientifico",
+        "Conteudo": "BBBBBBBBBBBB",
+        "NomeAutor": "João"
+      },
+      {
+        "tema": {
+          "subTemas": [
+            "Ciencia da Computacao",
+            "Ciencias Contabeis",
+            "Ciencia Politica"
+          ],
+          "NomeTema": "Ciencia",
+          "TemaPai": null
+        },
+        "Valor": 100.0,
+        "Titulo": "Ciencia1",
+        "Conteudo": "ciencia1",
+        "NomeAutor": "João"
+      },
+      {
+        "tema": {
+          "subTemas": [
+            "Ciencia da Computacao",
+            "Ciencias Contabeis",
+            "Ciencia Politica"
+          ],
+          "NomeTema": "Ciencia",
+          "TemaPai": null
+        },
+        "Valor": 100.0,
+        "Titulo": "Ciencia2",
+        "Conteudo": "ciencia2",
+        "NomeAutor": "João"
+      },
+      {
+        "tema": {
+          "subTemas": [
+            "Ciencia da Computacao",
+            "Ciencias Contabeis",
+            "Ciencia Politica"
+          ],
+          "NomeTema": "Ciencia",
+          "TemaPai": null
+        },
+        "Valor": 100.0,
+        "Titulo": "Ciencia3",
+        "Conteudo": "ciencia3",
+        "NomeAutor": "João"
+      },
+      {
+        "tema": {
+          "subTemas": [
+            "Ciencia da Computacao",
+            "Ciencias Contabeis",
+            "Ciencia Politica"
+          ],
+          "NomeTema": "Ciencia",
+          "TemaPai": null
+        },
+        "Valor": 100.0,
+        "Titulo": "Ciencia4",
+        "Conteudo": "ciencia4",
+        "NomeAutor": "João"
+      }
+    ],
+    "ContaRecebimento": "13921356212",
+    "Id": 1,
+    "Nome": "João",
+    "Usuario": "Jao3321",
+    "Senha": "13326"
+  },
+  {
+    "livrosPublicados": [],
+    "ContaRecebimento": null,
+    "Id": 2,
+    "Nome": "Sérgio",
+    "Usuario": "Serginho123",
+    "Senha": "231235"
+  },
+  {
+    "livrosPublicados": [
+      {
+        "tema": {
+          "subTemas": [
+            "Ciencia da Computacao",
+            "Ciencias Contabeis",
+            "Ciencia Politica"
+          ],
+          "NomeTema": "Ciencia",
+          "TemaPai": null
+        },
+        "Valor": 300.0,
+        "Titulo": "ABC",
+        "Conteudo": "aAAAAAAAAAAAAAA",
+        "NomeAutor": "Mariela"
+      }
+    ],
+    "ContaRecebimento": "123",
+    "Id": 3,
+    "Nome": "Mariela",
+    "Usuario": "Maripool",
+    "Senha": "144326"
+  }
+]

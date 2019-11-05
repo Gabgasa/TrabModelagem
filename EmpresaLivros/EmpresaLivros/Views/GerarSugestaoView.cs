@@ -10,9 +10,20 @@ namespace EmpresaLivros.Views
         { 
         }
 
-        public void gerarSugestao()
+        public static void gerarSugestao(List<Livro> livros)
         {
-            
+            int i = 1;
+            Console.WriteLine("Lista de sugestões:\n");
+            foreach (Livro lv in livros)
+            {
+                Console.WriteLine($"\t{i} - {lv.Titulo}");
+                i++;
+            }
+        }
+
+        public static void erroSugestao()
+        {
+            Console.WriteLine("Não há sugestões disponiveis no momento.\n");
         }
     }
 }

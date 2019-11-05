@@ -11,7 +11,7 @@ namespace EmpresaLivros
         {
         }
 
-        public void Pagamento(Cliente cliente)
+        public void realizarPagamento(Cliente cliente)
         {
             ControladorListarLivrosTema livrosTema = new ControladorListarLivrosTema();
             livrosTema.ListarLivros();
@@ -35,7 +35,7 @@ namespace EmpresaLivros
                     switch (Console.ReadLine())
                     {
                         case "1":
-                            Pagamento(cliente);
+                            realizarPagamento(cliente);
                             break;
                         case "2":
                             removerLivro(cliente, pedido);
@@ -61,12 +61,13 @@ namespace EmpresaLivros
             ItemPedido ipedido = pedido.findItemPedido(itempedido);
             pedido.removeItemPedido(ipedido);
             Views.PagamentoView.listarCarrinhoDeCompras(pedido);
-            Pagamento(cliente);
+            realizarPagamento(cliente);
         }
 
         private void efetuarPagamento(Cliente cliente, Pedido pedido)
         {
-
+            Pagamento.efetuarPagamento(pedido, cliente);
+            Controlador.Inicio();
         }
 
 
