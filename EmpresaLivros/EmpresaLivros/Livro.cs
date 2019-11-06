@@ -21,6 +21,7 @@ namespace EmpresaLivros
 
         public Livro(float valor, string conteudo, string titulo, string nomeAutor, Tema tema)
         {
+            bool valorigual = false;
             this.Valor = valor;
             this.Titulo = titulo;
             this.datapublicacao = new DateTime();
@@ -28,7 +29,20 @@ namespace EmpresaLivros
             this.conteudo = conteudo;
             this.NomeAutor = nomeAutor;
 
-            Livros.Add(this);
+            foreach (Livro lv in Livros)
+            {
+                if (lv.Titulo.Equals(titulo))
+                {
+                    valorigual = true;
+                }
+
+            }
+
+            if (valorigual == false)
+            {
+                Livros.Add(this);
+            }
+            
         }
 
         public float Valor { get => valor; set => valor = value; }

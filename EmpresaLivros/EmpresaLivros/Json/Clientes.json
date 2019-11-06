@@ -44,9 +44,24 @@
         "Titulo": "Analise de Algoritmos",
         "Conteudo": "aaaaaaaaaaaa",
         "NomeAutor": "João"
+      },
+      {
+        "tema": {
+          "subTemas": [
+            "Ciencia da Computacao",
+            "Ciencias Contabeis",
+            "Ciencia Politica"
+          ],
+          "NomeTema": "Ciencia",
+          "TemaPai": null
+        },
+        "Valor": 100.0,
+        "Titulo": "Ciencia1",
+        "Conteudo": "ciencia1",
+        "NomeAutor": "João"
       }
     ],
-    "Balanco": 3951.0,
+    "Balanco": 3851.0,
     "Id": 6,
     "Nome": "Gabriel",
     "Usuario": "Evinie",

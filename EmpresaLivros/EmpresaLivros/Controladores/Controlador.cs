@@ -14,7 +14,11 @@ namespace EmpresaLivros
             //TemaDao.loadTemas();
             ClienteDao.loadClientes();
             AutorDao.loadAutores();
-            
+
+           
+                
+
+
 
             Inicio();
         }
@@ -28,11 +32,12 @@ namespace EmpresaLivros
 
             MenuInicialView Interface = new MenuInicialView();
 
+
             Interface.menuInicial();
             switch (Console.ReadLine())
             {
                 case "1":
-                    PublicarLivro.Publicar(Autor.listaAutores[2]);
+                    PublicarLivro.Publicar(Autor.listaAutores[0]);
                     break;
                 case "2":
                     ListarLivrosTema.ListarLivros();
@@ -41,7 +46,7 @@ namespace EmpresaLivros
                     ControlePagamento.realizarPagamento(Cliente.listaClientes[2]);
                     break;
                 case "4":
-                    ControleSugestao.gerarSugestao(Cliente.listaClientes[0]);
+                    ControleSugestao.gerarSugestao(Cliente.listaClientes[2]);
                     break;
                 case "5":
                     return;
