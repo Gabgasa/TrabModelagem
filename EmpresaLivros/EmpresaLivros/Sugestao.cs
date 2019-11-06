@@ -8,6 +8,7 @@ namespace EmpresaLivros
     {
         public List<Livro> geraSugestao(Cliente cliente)
         {
+            int count;
             List<string> listaTemas = new List<string>();
             List<string> temasEscolhidos = new List<string>();
             List<Livro> resposta = new List<Livro>();
@@ -36,7 +37,6 @@ namespace EmpresaLivros
                 {
                     if (!cliente.LivrosComprados.Equals(lv) && temasEscolhidos.Equals(lv.Tema.NomeTema))
                     {
-                        Console.WriteLine("c");
                         resposta.Add(lv);
                         temasEscolhidos.Remove(lv.Tema.NomeTema);
                     }
@@ -57,7 +57,7 @@ namespace EmpresaLivros
                 }
                 Console.WriteLine(temasEscolhidos.Count);
                 Console.WriteLine("Temas escolhidos ---- " + temasEscolhidos[0] + " / " + temasEscolhidos[1]);
-
+                count = 0;
                 foreach (Livro lv in Livro.Livros)
                 {
                     //Console.WriteLine(cliente.LivrosComprados.Contains(lv) == false);
@@ -65,11 +65,12 @@ namespace EmpresaLivros
                     //Console.WriteLine(lv.Titulo);
                     if (cliente.LivrosComprados.Contains(lv) == false)
                     {
-                        if (temasEscolhidos.Contains(lv.Tema.NomeTema) == true)
+                        if (temasEscolhidos.Contains(lv.Tema.NomeTema) == true && count<3)
                         {
 
                             Livro aux = lv;
                             resposta.Add(aux);
+                            count++;
                         }
                     }
             
@@ -82,10 +83,11 @@ namespace EmpresaLivros
 
             else if (listaTemas.Count == 1 && escolheLivros == true)
             {
+                count = 0;
                 escolheLivros = false;
                 foreach (Livro lv in Livro.Livros)
                 {
-                    if (!cliente.LivrosComprados.Contains(lv) && listaTemas.Contains(lv.Tema.NomeTema))
+                    if (!cliente.LivrosComprados.Contains(lv) && listaTemas.Contains(lv.Tema.NomeTema) && count<3)
                     {
                         Console.WriteLine("a");  
                         resposta.Add(lv);
